@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Content with JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 0px;
+        }
+        .content {
+            background-color: white;
+            padding: 0px;
+         
+        }
+       
+    </style>
+</head>
+<body>
+
+<div id="content" class="content"></div>
+
+<script>
+    const content = `
+     <h2>Yah! I can write HTML content through JavaScript<h2/>
+    `;
+    document.getElementById('content').innerHTML = content;
+</script>
+
+</body>
+</html>
